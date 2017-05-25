@@ -1,0 +1,39 @@
+/**********************************************************************************************************
+    README
+
+    Responde las preguntas siguientes:
+
+    1.- Explica con tus propias palabras, la diferencia entre el upcasting y el downcasting.
+
+    2.- Tenemos una clase parent del tipo PERSONA. Además tenemos otras 3 clases más que heredan de
+    la clase parent PERSONA, que son ESTUDIANTE, EMPLEADO, PROFESOR. Argumenta si las siguientes
+    líneas son correctas o darán error.
+
+        Person y = new Student();
+        Student s = (Student) new Person;
+
+    3.- Define la anotación Request, que tiene los elementos id, process, batch y date. Especifica
+    que los valores por defecto de process es unassigned y el de batch es 1.
+
+    4.- Dada la siguiente interface, ¿el compilador producirá algún warning/error? si es así,
+    ¿que acción necesaria tendriamos que utilizar en la clase MyCar?.
+
+public interface Car {
+    /**
+    * @deprecated use
+    * openRight or
+    * openLeft instead.
+    */
+    @Deprecated
+    public void open();
+    public void openRight();
+    public void openLeft();
+}
+
+public class MyCar implements Car {
+    public void open() {}
+    public void openRight() {}
+    public void openLeft() {}
+}
+
+**********************************************************************************************************/
